@@ -7,6 +7,7 @@
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
+\newcommand{\card}[1]{\operatorname{\#}\left(#1 \right)}
 
 %--Algebra--
 
@@ -37,14 +38,18 @@
 
 %--Theorems
 \tcbuselibrary{theorems}
-\newtcbtheorem[number within=section]{satz}{Satz}{}{S}
-\newtcbtheorem[number within=section]{kor}{Korollar}{}{K}
-\newtcbtheorem[number within=section]{Def}{Definition}{}{D}
-\newtcbtheorem[number within=section]{hilfs}{Hilfssatz}{}{HS}
-\newtcbtheorem[number within=section]{Lemma}{Lemma}{}{L}
-\newtcbtheorem[number within=section]{folg}{Folgerung}{}{FOLG}
-\newtcbtheorem[use counter=aufgabe]{auf}{Aufgabe}{}{A}
+\newtcbtheorem[number within=section, crefname={\mathrm{Satz}}{Satz}]{satz}{Satz}{}{S}
+\newtcbtheorem[number within=section, crefname={\mathrm{Korollar}}{Korollar}]{kor}{Korollar}{}{K}
+\newtcbtheorem[number within=section, crefname={\mathrm{Definition}}{Definition}]{Def}{Definition}{}{D}
+\newtcbtheorem[number within=section, crefname={\mathrm{Hilfssatz}}{Hilfssatz}]{hilfs}{Hilfssatz}{}{HS}
+\newtcbtheorem[number within=section, crefname={\mathrm{Lemma}}{Lemma}]{Lemma}{Lemma}{}{L}
+\newtcbtheorem[number within=section, crefname={\mathrm{Folgerung}}{Folgerung}]{folg}{Folgerung}{}{FOLG}
+\newtcbtheorem[number within=section, crefname={\mathrm{Aufgabe}}{Aufgabe}]{auf}{Aufgabe}{}{A}
+\newtcbtheorem[number within=section, crefname={\mathrm{Proposition}}{Proposition}]{prop}{Proposition}{}{A}
 
+\theoremstyle{remark}
+\newtheorem{bsp}{Beispiel}[section]
+\newtheorem{bem}{Bemerkung}[section]
 
 
 
